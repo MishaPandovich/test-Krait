@@ -1,4 +1,5 @@
-body {
-	background: yellow;
-	border: 1px solid red;
-}
+@import 'body/normalize.scss';
+@import 'body/fonts.scss';
+@import 'body/body.scss';
+@import 'block/header/header.scss';
+@import 'block/main/features.scss';
