@@ -1,5 +1,156 @@
 .comments {
 	position: relative;
+    margin: 0 auto;
+    margin-top: 8%;
+    padding-bottom: 13%;
+    margin-bottom: 10%;
+}
+
+.comments__title {
+	width: 90%;
+    margin: 0 auto;
+    margin-top: 14%;
+
+	font-family: 'Dosis Medium', sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.comments__text {
+	width: 90%;
+    margin: 6% auto;
+
+	font-family: 'Roboto Ligth', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #777777;
+	text-align: center;
+}
+
+.slider {
+    height: 300px;
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.slidewrapper {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+
+    height:200px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.slide {
+    float: left;
+    width: 270px;
+    min-height: 250px;
+    box-sizing: border-box;
+    background: #f7fafc;
+    margin-right: 25px;
+    padding: 10px;
+    box-shadow: 1px 4px 26px -11px #000000;
+
+    &__text {
+        width: 90%;
+		font-family: 'Roboto Ligth', sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+		color: #777777;
+	}
+
+	&__name {
+		font-family: 'Dosis Medium', sans-serif;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&__add-info {
+		font-family: 'Roboto Ligth', sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+		color: #777777;
+	}
+
+	&__userpic {
+		display: inline-block;
+	}
+
+	&__inner {
+		display: inline-block;
+	    position: relative;
+	    top: -20px;
+	    left: 10px;
+	}
+}
+
+.arrows{
+    width: 300px;
+    text-align: center;
+    margin: 5px auto
+}
+
+.arrow {
+	display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #eeee;
+	background: #ffffff;
+
+    //background: #fd712c; // для старых браузеров
+	//background: linear-gradient(to left, #ee1d73, #fd712c);
+}
+
+.arrow-prev {
+	position: absolute;
+    left: 24%;
+    bottom: 0;
+
+    &::before {
+		content: "";
+	    display: block;
+	    position: relative;
+	    top: 15px;
+	    left: 11px;
+	    width: 26px;
+	    height: 21px;
+	    background: url(../img/arrow.png) no-repeat;
+	    background-position: -14px -122px;
+	}
+}
+
+.arrow-next {
+	position: absolute;
+    right: 24%;
+    bottom: 0;
+
+    &::before {
+		content: "";
+	    display: block;
+	    position: relative;
+	    top: 15px;
+	    left: 11px;
+	    width: 25px;
+	    height: 20px;
+	    background: url(../img/arrow.png) no-repeat;
+	    background-position: -15px -16px;
+	}
+}
+
+
+
+/*
+.comments {
+	position: relative;
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 8%;
@@ -144,3 +295,4 @@
 .slide-active {
 	background: orange;
 }
+*/

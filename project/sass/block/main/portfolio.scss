@@ -1,4 +1,6 @@
 .portfolio {
+	margin-top: 12%;
+
 	font-family: 'Roboto Light', sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -6,55 +8,52 @@
 	text-align: center;
 	
 	background: #f7fafc;
+	border-top: 1px solid transparent;
 
 	&__inner {
 		position: relative;
 		margin: 0 auto;
-		margin-top: 5%;
-		border: 1px solid green;
 		border-top: 1px solid transparent;
 	}
 
 	&__title {
 	    margin-top: 10%;
+	    margin-bottom: 4%;
+
 		font-family: 'Dosis Medium', sans-serif;
 		font-size: 36px;
-		line-height: 30px;
+		line-height: 36px;
 		color: #000000;
 	}
 
 	&__text {
-	    width: 89%;
 		margin: 0 auto;
 	}
 }
 
 #carousel {
-  margin: 0 auto;
-  border:1px solid #222;
-  height: 450px;
-  position:relative;
-  padding-bottom: 20px;
-  clear:both;
-  overflow:hidden;
-  background: #f7fafc;
-
-  border: 1px solid green;
+	position:relative;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	height: 450px;
+	clear:both;
+	overflow:hidden;
+	background: #f7fafc;
 }
 
 #carousel div {
-  visibility:hidden; /* hide images until carousel can handle them */
-  cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+	visibility:hidden; 
+	cursor:pointer; 
 }
 
 #carousel h2 {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
-.img {
-  width: 250px;
+.carousel__img {
+	width: 250px;
 }
 
 .carousel-arrow {
@@ -63,7 +62,7 @@
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    border: 3px solid #eeee;
+    border: 1px solid #eeee;
 	background: #ffffff;
 
     //background: #fd712c; // для старых браузеров
@@ -73,7 +72,7 @@
 .carousel-arrow--prev {
 	position: absolute;
     left: 25%;
-    bottom: 20px;
+    bottom: 35px;
 
     &::before {
 		content: "";
@@ -91,7 +90,7 @@
 .carousel-arrow--next {
 	position: absolute;
 	right: 25%;
-    bottom: 20px;
+    bottom: 35px;
 
     &::before {
 		content: "";
@@ -105,7 +104,7 @@
 	    background-position: -15px -16px;
 	}
 }
-
+/*
 @media (min-width: 1000px) {
 	.portfolio__text {
 		width: 64%;
@@ -168,3 +167,4 @@
 	    right: 0;
 	}
 }
+*/

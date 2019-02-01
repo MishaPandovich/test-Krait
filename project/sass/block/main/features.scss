@@ -14,6 +14,7 @@
 	}
 
 	&__text {
+	    width: 95%;
 		font-weight: 'Roboto Ligth', sans-serif;
 		font-size: 14px;
 		line-height: 24px;
@@ -25,7 +26,10 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
+	
+	width: 98%;
+    margin: auto;
+    margin-top: 15%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -35,14 +39,14 @@
 	position: relative;
 	width: 100%;
 	max-width: 290px;
-	padding-left: 80px;
+	padding-left: 85px;
 	margin-bottom: 25px;
 
 	&::before {
 		content: "";
 	    position: absolute;
 	    top: 10px;
-	    left: 1%;
+	    left: 0;
 	    width: 70px;
 	    height: 70px;
 	    background: url('../img/sprite.png') no-repeat;
@@ -81,7 +85,7 @@
     background: url('../img/sprite.png') no-repeat;
     background-position: 7px -911px;
 }
-
+/*
 @media (min-width: 400px) {
 	.features {
 		width: 90%;
@@ -158,3 +162,4 @@
 		margin-bottom: 45px;
 	}
 }
+*/

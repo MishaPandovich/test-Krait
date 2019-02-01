@@ -7,18 +7,15 @@
 .social {
 	display: flex;
 	justify-content: space-between;
-	width: 250px;
-    min-height: 50px;
-    border: 1px solid red;
+	width: 150px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 55px;
 }
 
 .social__icon {
 	display: block;
 	width: 30px;
 	height: 30px;
-	background: red;
 
 	&::before {
 		content: "";
@@ -26,7 +23,7 @@
 		position: relative;
 		width: 30px;
 		height: 30px;
-		background: green url(../img/sprite.png) no-repeat;
+		background: url(../img/sprite.png) no-repeat;
     	background-position: -6px -375px;
 	}
 }
@@ -35,7 +32,7 @@
 
 	&::before {
 		content: "";
-		background: green url(../img/sprite.png) no-repeat;
+		background: url(../img/sprite.png) no-repeat;
     	background-position: -8px -328px;
 	}
 }
@@ -44,7 +41,7 @@
 
 	&::before {
 		content: "";
-	    background: green url(../img/sprite.png) no-repeat;
+	    background: url(../img/sprite.png) no-repeat;
 	    background-position: -8px -422px;
 	}
 }
@@ -53,14 +50,18 @@
 
 	&::before {
 		content: "";
-	    background: green url(../img/sprite.png) no-repeat;
+	    background: url(../img/sprite.png) no-repeat;
 	    background-position: -10px -468px;
 	}
 }
 
 .footer-copyrigth {
-	color: #ffffff;
-	text-align: center;
-	margin: 0;
-	margin-bottom: 60px;
+	width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+   
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
 }

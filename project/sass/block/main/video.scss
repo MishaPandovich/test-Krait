@@ -1,5 +1,7 @@
 .video {
 	position: relative;
+	background: blue url('../img/Overlay.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 
 .video__controls {
@@ -11,6 +13,7 @@
 	margin: auto;
 	width: 70px;
     height: 70px;
+    
     font-size: 0;
     border: none;
     border-radius: 100%;
