@@ -182,18 +182,18 @@
 
 @media (min-width: 1300px) {
 	.header {
-			&::after {
+		&::after {
 			content: "";
-	    position: absolute;
-	    top: 20%;
-	    right: -1px;
-	    width: 60%;
-	    height: 80%;
+		    position: absolute;
+		    top: 20%;
+		    right: -1px;
+		    width: 60%;
+		    height: 80%;
 		}
 	}
 
 	.header__wrapper {
-		width: 60%;
+		width: 80%;
 	}
 
 	.nav-site {

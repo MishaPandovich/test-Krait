@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Тестовое задание: Крайт</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/TweenMax.min.js" defer></script>
+  <script type="text/javascript" src="js/jquery.waterwheelCarousel.js" defer></script>
+  <script type="text/javascript" src="js/carousel.js" defer></script>
+  <script type="text/javascript" src="js/carousel-comment.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -74,6 +79,163 @@
         </ul>
       </div>
     </section>
+    
+    <section class="portfolio">
+      <div class="portfolio__inner">
+        <h2 class="portfolio__title">Take a look at our screenshots</h2>
+        <p class="portfolio__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+
+        <div id="carousel">
+          <div><img class="img" src="img/Bitmap1.png" id="item-1"/></div>
+          <div><img class="img" src="img/Bitmap5.png" id="item-2"/></div>
+          <div><img class="img" src="img/Bitmap7.png" id="item-3"/></div>
+          <div><img class="img" src="img/Bitmap4.png" id="item-4"/></div>
+          <div><img class="img" src="img/Bitmap6.png" id="item-7"/></div>
+          <div><img class="img" src="img/Bitmap3.png" id="item-6"/></div>
+          <div><img class="img" src="img/Bitmap.png" id="item-5"/></div>
+        </div>
+        <a href="#" class="carousel-arrow carousel-arrow--prev" id="prev">Prev</a>
+        <a href="#" class="carousel-arrow carousel-arrow--next" id="next">Next</svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="price">
+      <h2 class="price__title">We've got the perfect package for you</h2>
+      <p class="price__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+      <ul class="price-list">
+        <li class="price-list__item">
+          <h3 class="price-list__title">Basic</h3>
+          <p class="price-list__cost"><span class="dollar">$</span>12.0<span class="megabait">/m</span></p>
+          <div class="price-list__characteristics">
+            <span>One User</span>
+            <span>Multiple Access</span>
+            <span>SMS Support</span>
+            <span>24/7 Online Support</span>
+          </div>
+          <span class="price-list__link-label">Start Free Tria</span>
+          <a class="price-list__link" href="#">Buy Now</a>
+        </li>
+        <li class="price-list__item">
+          <h3 class="price-list__title">Standard</h3>
+          <p class="price-list__cost"><span class="dollar">$</span>24.0<span class="megabait">/m</span></p>
+          <div class="price-list__characteristics">
+            <span>Five User</span>
+            <span>Multiple Access</span>
+            <span>SMS Support</span>
+            <span>24/7 Online Support</span>
+          </div>   
+          <span class="price-list__link-label">Start Free Tria</span>
+          <a class="price-list__link" href="#">Buy Now</a>
+        </li>
+        <li class="price-list__item">
+          <h3 class="price-list__title">Premium</h3>
+          <p class="price-list__cost"><span class="dollar">$</span>250.0<span class="megabait">/m</span></p>
+          <div class="price-list__characteristics">
+            <span>Twenty User</span>
+            <span>Multiple Access</span>
+            <span>SMS Support</span>
+            <span>24/7 Online Support</span>
+          </div>
+          <span class="price-list__link-label">Start Free Tria</span>
+          <a class="price-list__link" href="#">Buy Now</a>
+        </li>
+        <li class="price-list__item">
+          <h3 class="price-list__title">Enterprise</h3>
+          <p class="price-list__cost"><span class="dollar">$</span>999.0<span class="megabait">/m</span></p>
+          <div class="price-list__characteristics">
+            <span>Unlimited User</span>
+            <span>Multiple Access</span>
+            <span>SMS Support</span>
+            <span>24/7 Online Support</span>
+          </div>
+          <span class="price-list__link-label">Start Free Tria</span>
+          <a class="price-list__link" href="#">Buy Now</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="video">
+      <video class="video__content" preload="metadata" poster="img/Overlay.jpg" width="100%" height="100%">
+        <source src="#.mp4" type="video/mp4">
+        <source src="#.ogv" type="video/ogg">
+        <source src="#.webm" type="video/webm">
+      </video>
+      <button class="video__controls">Включить</button>
+    </section>
+
+    <section class="comments">
+      <h2 class="comments__title">What our customers are saying</h2>
+      <p class="comments__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+
+      <div class="slider">
+        <ul data-current='0' class='slidewrapper'>
+          <li class="slide">
+            <p class="slide__text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+            <img class="slide__userpic" src="img/userpic-1.png">
+            <div class="slide__inner">
+              <span class="slide__name">Alexandra Bullok</span><br>
+              <span class="slide__add-info">Apple inc.</span>
+            </div>
+          </li>
+          <li class="slide slide-active">
+            <p class="slide__text">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+            <img class="slide__userpic" src="img/userpic-2.png">
+            <div class="slide__inner">
+              <span class="slide__name">Gary Sebastian</span><br>
+              <span class="slide__add-info">Apple inc.</span>
+            </div>
+          </li>
+          <li class="slide">
+            <p class="slide__text">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
+            <img class="slide__userpic" src="img/userpic-3.png">
+            <div class="slide__inner">
+              <span class="slide__name">Samanta Bilbau</span><br>
+              <span class="slide__add-info">Apple inc.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="arrows">
+        <a href="javascript: void(0)" class="arrow arrow-prev" id="prev_slide">Prev</a>
+        <a href="javascript: void(0)" class="arrow arrow-next" id="next_slide">Next</a>
+      </div>
+    </section>  
+
+    <section class="downloads">
+      <div class="downloads__inner">
+        <h2 class="downloads__title">Download Giant App Now</h2>
+        <ul class="IOS-list">
+          <li class="IOS-list__item">
+            <a class="icon-apple" href="#">
+              <h3 class="IOS-list__title">Download</h3>
+              <p class="IOS-list__text">Download from app store</p>
+            </a>
+          </li>
+          <li class="IOS-list__item">
+            <a class="icon-android" href="#">
+              <h3 class="IOS-list__title">Download</h3>
+              <p class="IOS-list__text">Download from app store</p>
+            </a>
+          </li>
+          <li class="IOS-list__item">
+            <a class="icon-windows" href="#">
+              <h3 class="IOS-list__title">Download</h3>
+              <p class="IOS-list__text">Download from app store</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="social">
+      <a class="social__icon" href="#"></a>
+      <a class="social__icon" href="#"></a>
+      <a class="social__icon" href="#"></a>
+      <a class="social__icon" href="#"></a>
+    </div>
+    <p class="footer-copyrigth">Copyright © 2017  |  UXSEVEN - a sister concern of codepixar.com</p>
+  </footer>
 </body>
 </html>

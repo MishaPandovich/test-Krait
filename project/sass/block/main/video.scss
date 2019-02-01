@@ -1,0 +1,29 @@
+.video {
+	position: relative;
+}
+
+.video__controls {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 70px;
+    height: 70px;
+    font-size: 0;
+    border: none;
+    border-radius: 100%;
+    background: #fd712c; // для старых браузеров
+	background: linear-gradient(to left, #ee1d73, #fd712c);
+	cursor: pointer;
+
+    &::before {
+		content: "";
+	    position: relative;
+	    left: 13px;
+	    border: 15px solid transparent;
+	    border-left: 30px solid white;
+	    border-radius: 4px;
+	}
+}
