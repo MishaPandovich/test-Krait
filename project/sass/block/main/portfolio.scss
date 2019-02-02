@@ -64,9 +64,6 @@
     border-radius: 100%;
     border: 1px solid #eeee;
 	background: #ffffff;
-
-    //background: #fd712c; // для старых браузеров
-	//background: linear-gradient(to left, #ee1d73, #fd712c);
 }
 
 .carousel-arrow:hover {
@@ -176,5 +173,40 @@
 
 	.carousel-arrow--next {
 		right: 15%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.portfolio {
+    	margin-top: 0%;
+	}
+
+	.portfolio__title {
+	    margin-top: 6.5%;
+	    margin-bottom: 1%;
+	}
+
+	.portfolio__text {
+    	width: 35%;
+	}
+
+	#carousel {
+		width: 100%;
+	    height: 695px;
+    	margin-top: 5px;
+	}
+
+	.carousel__img {
+		width: 420px;
+	}
+
+	.carousel-arrow--next {
+	    top: 59%;
+	    right: 15.5%;
+	}
+
+	.carousel-arrow--prev {
+	    top: 59%;
+	    left: 15.5%;
 	}
 }

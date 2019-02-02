@@ -1,4 +1,8 @@
 var slideWidth = 300; 
+
+// сделать завтра если ширина экрана больше 1800 .. то 
+var slideWidth = 400;
+
    
 $('.slidewrapper').width($('.slidewrapper').children().length * slideWidth);
 

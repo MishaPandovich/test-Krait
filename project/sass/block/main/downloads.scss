@@ -112,3 +112,42 @@
 	    margin-bottom: 15px;
 	}
 }
+
+@media (min-width: 1400px) {
+	.downloads__title {
+		margin-top: 6.3%;
+    	margin-bottom: 5%;
+	}
+
+	.IOS-list {
+		width: 60%;
+		margin-bottom: 5.5%;
+	}
+	
+	.IOS-list__item {
+	    width: 31%;
+	    height: 110px;
+	}
+
+	.IOS-list__title {
+		font-size: 28px;
+	}
+
+	.IOS-list__item a::before {
+	    content: "";
+	    background: #f7fafc url(../img/sprite.png) no-repeat;
+	    background-position: -9px 5px;
+	}
+
+	.IOS-list__item .icon-apple::before {
+	    content: "";
+	    background: #f7fafc url(../img/sprite.png) no-repeat;
+	    background-position: -9px -103px;
+	}
+
+	.IOS-list__item .icon-windows::before {
+	    content: "";
+	    background: #f7fafc url(../img/sprite.png) no-repeat;
+	    background-position: -14px -210px;
+	}
+}

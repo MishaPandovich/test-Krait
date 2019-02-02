@@ -174,3 +174,35 @@
     	}
 	}
 }
+
+@media (min-width: 1400px) {
+	.advantages-product {
+    	width: 60%;
+	}
+
+	.advantages-product::before {
+	    content: "";
+	    top: -1%;
+	    left: -17px;
+	    bottom: 0;
+	}
+
+	.advantages-product__inner {
+		width: 50.5%;
+	    margin-right: -12px;
+	}
+
+	.advantages-product__text:nth-child(3) {
+    	margin-top: 65px;
+    }
+
+    .advantages-product__list {
+		margin-top: 5%;
+    	margin-left: 1%;
+	}
+
+	.advantages-product__item {
+	    padding-left: 35px;
+	    margin-bottom: 11px;
+	}
+}

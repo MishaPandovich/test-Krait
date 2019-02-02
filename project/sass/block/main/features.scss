@@ -168,3 +168,33 @@
 		margin-bottom: 45px;
 	}
 }
+
+@media (min-width: 1400px) {
+	.features {
+	    width: 80%; 
+	    margin-top: 6%;
+	}
+
+	.features__list {
+   		width: 100%;
+   		margin-top: 5px;
+	}
+
+	.features__item {
+		width: 23%;
+	    padding-left: 10%;
+		margin-top: 4px;
+    	margin-bottom: 17px;
+	}
+
+	.features__title {
+		font-size: 21px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.features {
+	    width: 61%; 
+	    margin-top: 6%;
+	}
+}

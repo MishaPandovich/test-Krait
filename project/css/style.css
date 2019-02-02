@@ -339,6 +339,7 @@ body {
 body {
   width: 100%;
   min-width: 360px;
+  max-width: 1920px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif; }
 
@@ -547,6 +548,43 @@ body {
     .about-us__list {
       width: auto; } }
 
+@media (min-width: 1400px) {
+  .header::after {
+    content: "";
+    position: absolute;
+    top: 17%;
+    right: -1px;
+    width: 50%;
+    height: 80%; }
+  .header__wrapper {
+    width: 61%;
+    padding-left: 18px;
+    padding-bottom: 11%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .nav-site__item {
+    margin-left: 48px; }
+  .about-us__title {
+    width: 95%;
+    margin-top: 18%;
+    margin-bottom: 3%; }
+  .about-us__text {
+    width: 91%; }
+  .about-us__item {
+    margin-left: 30px;
+    margin-bottom: 1.5%; }
+    .about-us__item::before {
+      content: "";
+      left: -32px; }
+  .about-us__link {
+    margin-top: 3%; } }
+
+@media (min-width: 1800px) {
+  .about-us__title {
+    width: 70%; }
+  .about-us__text {
+    width: 70%; } }
+
 .features {
   margin: 0 auto;
   margin-top: 7%;
@@ -686,6 +724,26 @@ body {
     padding-left: 13%;
     margin-bottom: 45px; } }
 
+@media (min-width: 1400px) {
+  .features {
+    width: 80%;
+    margin-top: 6%; }
+  .features__list {
+    width: 100%;
+    margin-top: 5px; }
+  .features__item {
+    width: 23%;
+    padding-left: 10%;
+    margin-top: 4px;
+    margin-bottom: 17px; }
+  .features__title {
+    font-size: 21px; } }
+
+@media (min-width: 1800px) {
+  .features {
+    width: 61%;
+    margin-top: 6%; } }
+
 .advantages-product {
   width: 98%;
   margin: 0 auto;
@@ -815,6 +873,26 @@ body {
       bottom: 0;
       width: 700px;
       height: 580px; } }
+
+@media (min-width: 1400px) {
+  .advantages-product {
+    width: 60%; }
+  .advantages-product::before {
+    content: "";
+    top: -1%;
+    left: -17px;
+    bottom: 0; }
+  .advantages-product__inner {
+    width: 50.5%;
+    margin-right: -12px; }
+  .advantages-product__text:nth-child(3) {
+    margin-top: 65px; }
+  .advantages-product__list {
+    margin-top: 5%;
+    margin-left: 1%; }
+  .advantages-product__item {
+    padding-left: 35px;
+    margin-bottom: 11px; } }
 
 .portfolio {
   margin-top: 12%;
@@ -951,6 +1029,27 @@ body {
     left: 15%; }
   .carousel-arrow--next {
     right: 15%; } }
+
+@media (min-width: 1400px) {
+  .portfolio {
+    margin-top: 0%; }
+  .portfolio__title {
+    margin-top: 6.5%;
+    margin-bottom: 1%; }
+  .portfolio__text {
+    width: 35%; }
+  #carousel {
+    width: 100%;
+    height: 695px;
+    margin-top: 5px; }
+  .carousel__img {
+    width: 420px; }
+  .carousel-arrow--next {
+    top: 59%;
+    right: 15.5%; }
+  .carousel-arrow--prev {
+    top: 59%;
+    left: 15.5%; } }
 
 .price {
   font-family: 'Roboto Light', sans-serif;
@@ -1135,6 +1234,21 @@ body {
     width: 51%;
     margin-bottom: 60px; } }
 
+@media (min-width: 1400px) {
+  .price__title {
+    margin-top: 6%;
+    margin-bottom: 1%; }
+  .price__text {
+    width: 35%; }
+  .price-list {
+    width: 80%;
+    margin-top: 4%;
+    margin-bottom: 4.5%; } }
+
+@media (min-width: 1800px) {
+  .price-list {
+    width: 60%; } }
+
 .video {
   position: relative;
   background: blue url("../img/Overlay.jpg") no-repeat;
@@ -1172,6 +1286,10 @@ body {
 @media (min-width: 500px) {
   .video {
     height: 320px; } }
+
+@media (min-width: 1400px) {
+  .video {
+    height: 400px; } }
 
 .comments {
   position: relative;
@@ -1353,21 +1471,58 @@ body {
   .slider {
     width: 82%; } }
 
-/*
 @media (min-width: 1340px) {
-	.slider {
-		width: 79%;
-	}
+  .slider {
+    width: 79%; }
+  .arrow-prev {
+    left: 0; }
+  .arrow-next {
+    right: 0; } }
 
-	.arrow-prev {
-	    left: 0;
-	}
+@media (min-width: 1500px) {
+  .slider {
+    width: 71%; } }
 
-	.arrow-next {
-	    right: 0;
-	}
-}
-*/
+@media (min-width: 1600px) {
+  .arrow-prev {
+    left: 5%;
+    top: 61%; }
+  .arrow-next {
+    right: 5%;
+    top: 61%; } }
+
+@media (min-width: 1650px) {
+  .slider {
+    width: 62%; } }
+
+@media (min-width: 1800px) {
+  .comments {
+    margin-top: 6%;
+    width: 80%;
+    margin-bottom: 5.5%; }
+  .comments__title {
+    margin-top: 0%; }
+  .comments__text {
+    margin: 1.5% auto;
+    width: 45%; }
+  .slider {
+    width: 80%;
+    height: 340px; }
+  .slidewrapper {
+    margin-left: 38px; }
+  .slide {
+    width: 350px;
+    margin-top: 4%;
+    margin-right: 49px;
+    padding: 32px;
+    padding-top: 20px; }
+  .arrow-prev {
+    top: 61%;
+    left: 6%; }
+  .arrow-next {
+    top: 61%;
+    right: 6%; } }
+
 .downloads {
   background: #fd712c;
   background: -webkit-gradient(linear, right top, left top, from(#ee1d73), to(#fd712c));
@@ -1467,6 +1622,31 @@ body {
     margin: 0;
     margin-bottom: 15px; } }
 
+@media (min-width: 1400px) {
+  .downloads__title {
+    margin-top: 6.3%;
+    margin-bottom: 5%; }
+  .IOS-list {
+    width: 60%;
+    margin-bottom: 5.5%; }
+  .IOS-list__item {
+    width: 31%;
+    height: 110px; }
+  .IOS-list__title {
+    font-size: 28px; }
+  .IOS-list__item a::before {
+    content: "";
+    background: #f7fafc url(../img/sprite.png) no-repeat;
+    background-position: -9px 5px; }
+  .IOS-list__item .icon-apple::before {
+    content: "";
+    background: #f7fafc url(../img/sprite.png) no-repeat;
+    background-position: -9px -103px; }
+  .IOS-list__item .icon-windows::before {
+    content: "";
+    background: #f7fafc url(../img/sprite.png) no-repeat;
+    background-position: -14px -210px; } }
+
 .footer {
   background: #222222;
   border-top: 1px solid black;
@@ -1521,3 +1701,7 @@ body {
   font-size: 15px;
   color: #ffffff;
   text-align: center; }
+
+@media (min-width: 1800px) {
+  .footer-copyrigth {
+    margin-bottom: 55px; } }

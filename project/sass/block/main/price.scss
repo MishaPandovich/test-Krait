@@ -215,3 +215,26 @@
     	margin-bottom: 60px;
 	}
 }
+
+@media (min-width: 1400px) {
+	.price__title {
+    	margin-top: 6%;
+    	margin-bottom: 1%;
+	}
+
+	.price__text {
+		width: 35%;
+	}
+
+	.price-list {
+    	width: 80%; 
+    	margin-top: 4%;	
+    	margin-bottom: 4.5%;
+	}
+}
+
+@media (min-width: 1800px) {
+	.price-list {
+    	width: 60%; 
+	}
+}
