@@ -25,8 +25,6 @@
     padding: 0;
     list-style: none;
 
-    border: 1px solid green;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -41,7 +39,6 @@
     height: 90px;
     margin-bottom: 15px;
     background: #ffffff;
-    border: 1px solid;
 
     & a {
 		text-decoration: none;
@@ -89,69 +86,29 @@
     color: #777777;
 }
 
-/*
-.downloads {
-	background: #fd712c; // для старых браузеров
-	background: linear-gradient(to left, #ee1d73, #fd712c);
-}
-
-.downloads__inner {
-	width: 80%;
-    border: 1px solid red;
-    margin: 0 auto;
-}
-
-.downloads__title {
-	margin-top: 7%;
-    margin-bottom: 7%;
-
-    font-family: 'Dosis Medium', sans-serif;
-    font-size: 36px;
-    line-height: 24px;
-    text-align: center;
-	color: #ffffff;
-}
-
-.IOS-list {
-	margin: 0;
-    padding: 0;
-    list-style: none;
-
-    border: 1px solid green;
-
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 8%;
-}
-
-.IOS-list__item {
-	position: relative;
-	width: 31%;
-    height: 90px;
-    background: #ffffff;
-    border: 1px solid;
-
-    & a::before {
-		content: "";
-	    position: absolute;
-	    width: 83px;
-	    height: 100%;
-	    background: #f7fafc url(../img/sprite.png) no-repeat;
-	    background-position: -9px 0px;
-	}
-
-	& .icon-apple::before {
-		content: "";
-	    background: #f7fafc url(../img/sprite.png) no-repeat;
-	    background-position: -9px -109px;
-	}
-
-	& .icon-windows::before {
-		content: "";
-	    background: #f7fafc url(../img/sprite.png) no-repeat;
-	    background-position: -14px -217px;
+@media (min-width: 700px) {
+	.IOS-list__item {
+		width: 330px;
+	    margin: auto;
+	    margin-bottom: 15px;
 	}
 }
-*/
+
+@media (min-width: 900px) {
+	.downloads__title {
+		font-size: 36px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.downloads__title {
+		margin-top: 10%;
+    	margin-bottom: 5%;
+	}
+
+	.IOS-list__item {
+		width: 32.5%;
+	    margin: 0;
+	    margin-bottom: 15px;
+	}
+}

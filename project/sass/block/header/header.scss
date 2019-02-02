@@ -121,7 +121,6 @@
 	}
 }
 
-/*
 @media (min-width: 400px) {
 	.header__wrapper {
 		width: 90%; // поменять
@@ -129,6 +128,22 @@
 
 	.about-us {
 		margin-left: 0;
+
+		&__list {
+			width: 54%; 
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.header__wrapper {
+		padding-bottom: 12%;
+	}
+
+	.about-us__title {
+		margin-top: 17%;
+    font-size: 3.5em;
+    line-height: 48px;
 	}
 }
 
@@ -150,6 +165,20 @@
 		&__title {
 			font-size: 3em;
 			line-height: 50px;
+		}
+	}
+}
+
+@media (min-width: 800px) {
+	.about-us {
+
+		&__title {
+			font-size: 54px;
+    	line-height: 60px;
+		}
+
+		&__text {
+			width: 65%;
 		}
 	}
 }
@@ -206,12 +235,13 @@
 
 		&__title {
 			width: auto; 
+			margin-top: 25%;
 			font-size: 54px;
 			line-height: 60px;
 		}
 
 		&__text {
-			width: 85%; 
+			width: 80%; 
 		}
 
 		&__list {
@@ -219,4 +249,3 @@
 		}
 	}
 }
-*/

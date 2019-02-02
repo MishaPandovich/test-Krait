@@ -41,7 +41,6 @@
 	margin-bottom: 20px;
 
 	background: #f7fafc;
-	border: 1px solid red;
 }
 
 .price-list__title {
@@ -77,8 +76,8 @@
 	    /* width: 50%; */
 	    /* height: 8%; */
 	    border: 28px solid transparent;
-	    border-bottom: 7px solid green;
-	    border-left: 97px solid green;
+	    border-bottom: 7px solid #f7fafc;
+	    border-left: 97px solid #f7fafc;
 	}
 
     &::after {
@@ -87,8 +86,8 @@
 	    bottom: 0;
 	    right: 0;
 	    border: 28px solid transparent;
-	    border-right: 97px solid green;
-	    border-bottom: 7px solid green;
+	    border-right: 97px solid #f7fafc;
+	    border-bottom: 7px solid #f7fafc;
 	}
 }
 
@@ -104,7 +103,6 @@
 }
 
 .price-list__characteristics {
-	border: 1px solid;
     width: 80%;
     margin: 0 auto;
 }
@@ -143,8 +141,77 @@
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 30px;
+
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 15px;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     background: #ffffff;
-    border-radius: 20px;
+    border: 1px solid #eeee;
+    border-radius: 25px;
+}
+
+// активная каточка
+.price-list__item--active {
+	box-shadow: rgb(0, 0, 0) 0px 5px 39px -12px;
+
+	& .price-list__cost {
+		color: #ffffff;
+		background: #fd712c; // для старых браузеров
+		background: linear-gradient(to left, #ee1d73, #fd712c);
+	}
+
+	& .price-list__link {
+		color: #ffffff;
+		border: 3px solid #eeee;
+		background: #fd712c; // для старых браузеров
+		background: linear-gradient(to left, #ee1d73, #fd712c);
+	}
+}
+
+@media (min-width: 500px) {
+	.price__title {
+		width: 90%;
+	    margin: auto;
+	    margin-top: 14%;
+	    margin-bottom: 5%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.price-list {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.price {
+		width: 80%;
+		margin: auto;
+	}
+
+	.price__list {
+		width: 70%;
+	}
+}
+
+@media (min-width: 1300px) {
+	.price {
+		width: 100%;
+	}
+
+	.price-list {
+		width: 80%;
+	}
+
+	.price__title {
+		margin-top: 10%;
+    	margin-bottom: 3%;
+	}
+
+	.price__text {
+    	width: 51%;
+    	margin-bottom: 60px;
+	}
 }

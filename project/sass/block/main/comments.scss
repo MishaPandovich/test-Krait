@@ -105,14 +105,17 @@
     border-radius: 100%;
     border: 1px solid #eeee;
 	background: #ffffff;
+}
 
-    //background: #fd712c; // для старых браузеров
-	//background: linear-gradient(to left, #ee1d73, #fd712c);
+.arrow:hover {
+	border: 3px solid #eeee;
+	background: #fd712c; // для старых браузеров
+	background: linear-gradient(to left, #ee1d73, #fd712c);
 }
 
 .arrow-prev {
 	position: absolute;
-    left: 24%;
+    left: 25%;
     bottom: 0;
 
     &::before {
@@ -128,9 +131,15 @@
 	}
 }
 
+.arrow-prev:hover::before {
+	content: "";
+	background: url(../img/arrow.png) no-repeat;
+  	background-position: -14px -176px;
+}
+
 .arrow-next {
 	position: absolute;
-    right: 24%;
+    right: 25%;
     bottom: 0;
 
     &::before {
@@ -146,153 +155,83 @@
 	}
 }
 
+.arrow-next:hover::before {
+	content: "";
+	background: url(../img/arrow.png) no-repeat;
+  	background-position: -15px -70px;
+}
 
+@media (min-width: 400px) {
+	.slider {
+		width: 65%;
+	}
+}
 
+@media (min-width: 500px) {
+	.slider {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.comments {
+		width: 80%;
+		padding-bottom: 0;
+	}
+
+	.arrow-prev {
+	    top: 55%;
+	    left: -45px;
+	}
+
+	.arrow-next {
+	    top: 55%;
+	    right: -45px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.slide {
+		margin-top: 20px;
+		box-shadow: none;
+	}
+
+	.slide-active {
+		background: #ffffff;
+    	box-shadow: 0px 5px 39px -12px #000000;
+	}
+}
+
+@media (min-width: 1300px) {
+	.comments {
+		margin-bottom: 8%;
+	}
+
+	.comments__title {
+	    margin-top: 11%;
+	}
+
+	.comments__text {
+       	margin: 4% auto;
+       	width: 73%;
+	}
+
+	.slider {
+		width: 82%;
+	}
+}	
 /*
-.comments {
-	position: relative;
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 8%;
-	border: 1px solid red;
-}
-
-.comments__title {
-	margin-top: 0px;
-
-	font-family: 'Dosis Medium', sans-serif;
-	font-size: 36px;
-	line-height: 30px;
-	text-align: center;
-}
-
-.comments__text {
-	width: 70%;
-	margin: 0 auto;
-    margin-bottom: 5%;
-	font-family: 'Roboto Ligth', sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	color: #777777;
-	text-align: center;
-}
-
-.slider {
-    height: 300px;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    position:relative;
-    box-sizing: border-box;
-}
-
-.slidewrapper {
-    list-style: none;
-    height:200px;
-    position:absolute;
-    left:0;
-    top:0;
-    margin: 0;
-    padding: 0;
-}
-
-.slide {
-    float: left;
-    width: 270px;
-    min-height: 250px;
-    box-sizing: border-box;
-    background: #f7fafc;
-    margin-right: 25px;
-    padding: 10px;
-
-    &__text {
-        width: 85%;
-		font-family: 'Roboto Ligth', sans-serif;
-		font-size: 14px;
-		line-height: 24px;
-		color: #777777;
+@media (min-width: 1340px) {
+	.slider {
+		width: 79%;
 	}
 
-	&__name {
-		font-family: 'Dosis Medium', sans-serif;
-		font-size: 18px;
-		line-height: 24px;
+	.arrow-prev {
+	    left: 0;
 	}
 
-	&__add-info {
-		font-family: 'Roboto Ligth', sans-serif;
-		font-size: 14px;
-		line-height: 24px;
-		color: #777777;
+	.arrow-next {
+	    right: 0;
 	}
-
-	&__userpic {
-		display: inline-block;
-	}
-
-	&__inner {
-		display: inline-block;
-	    position: relative;
-	    top: -20px;
-	    left: 10px;
-	}
-}
-.arrows{
-    width:300px;
-    text-align:center;
-    margin:5px auto
-}
-
-.arrow {
-	display: block;
-    font-size: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border: 3px solid #eeee;
-	background: #ffffff;
-
-    //background: #fd712c; // для старых браузеров
-	//background: linear-gradient(to left, #ee1d73, #fd712c);
-}
-
-.arrow-prev {
-	position: absolute;
-    top: 60%;
-    left: 0;
-
-    &::before {
-		content: "";
-	    display: block;
-	    position: relative;
-	    top: 15px;
-	    left: 11px;
-	    width: 26px;
-	    height: 21px;
-	    background: url(../img/arrow.png) no-repeat;
-	    background-position: -14px -122px;
-	}
-}
-
-.arrow-next {
-	position: absolute;
-	top: 60%;
-    right: 0;
-
-    &::before {
-		content: "";
-	    display: block;
-	    position: relative;
-	    top: 15px;
-	    left: 11px;
-	    width: 25px;
-	    height: 20px;
-	    background: url(../img/arrow.png) no-repeat;
-	    background-position: -15px -16px;
-	}
-}
-
-.slide-active {
-	background: orange;
 }
 */

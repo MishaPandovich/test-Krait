@@ -49,7 +49,7 @@
 	    background-position: -15px -562px;
 	}
 }
-/*
+
 @media (min-width: 400px) {
 	.advantages-product {
 		width: 90%;
@@ -87,6 +87,7 @@
 	}
 
 	.advantages-product__title {
+		margin-top: 30%;
 	    margin-bottom: 17px;
 	    font-size: 32px;
 	    line-height: 30px;
@@ -97,11 +98,11 @@
 	}
 }
 
-
 @media (min-width: 780px) {
 	.advantages-product {
     	&::before {
 			content: "";
+			top: 15%;
 		    bottom: 0;
     	}
 	}
@@ -119,6 +120,8 @@
 @media (min-width: 1000px) {
 	.advantages-product {
 		width: 80%;
+		font-size: 14px;
+		line-height: 24px;
 
 		&::before {
 			content: "";
@@ -132,12 +135,6 @@
 		width: 80%;
 	    margin: 0 auto;
 	    margin-top: 5.5%;
-
-	    font-family: 'Roboto Ligth', sans-serif;
-		font-size: 14px;
-		line-height: 24px;
-		color: #777777;
-		border: 1px solid transparent;
 
 		&::before {
 			content: "";
@@ -170,8 +167,10 @@
 
 		&::before {
 			content: "";
-		    bottom: 45px;
+		    top: 5%;
+		    bottom: 0;
+		    width: 700px;
+		    height: 580px;
     	}
 	}
 }
-*/

@@ -69,6 +69,12 @@
 	//background: linear-gradient(to left, #ee1d73, #fd712c);
 }
 
+.carousel-arrow:hover {
+	border: 3px solid #eeee;
+	background: #fd712c; // для старых браузеров
+	background: linear-gradient(to left, #ee1d73, #fd712c);
+}
+
 .carousel-arrow--prev {
 	position: absolute;
     left: 25%;
@@ -85,6 +91,12 @@
 	    background: url(../img/arrow.png) no-repeat;
 	    background-position: -14px -122px;
 	}
+}
+
+.carousel-arrow--prev:hover::before {
+	content: "";
+	background: url(../img/arrow.png) no-repeat;
+  	background-position: -14px -176px;
 }
 
 .carousel-arrow--next {
@@ -104,8 +116,24 @@
 	    background-position: -15px -16px;
 	}
 }
-/*
+
+.carousel-arrow--next:hover::before {
+	content: "";
+	background: url(../img/arrow.png) no-repeat;
+  	background-position: -15px -70px;
+}
+
+@media (min-width: 900px) {
+	.portfolio__text {
+		width: 71%;
+	}
+}
+
 @media (min-width: 1000px) {
+	.portfolio {
+		margin-top: 10%;
+	}
+
 	.portfolio__text {
 		width: 64%;
 	}
@@ -118,53 +146,35 @@
 	.carousel-arrow--prev {
 		position: absolute;
 		top: 60%;
-	    left: 3%;
+	    left: 5%;
 	}
 
 	.carousel-arrow--next {
 		position: absolute;
 		top: 60%;
-		right: 3%;
-	}
-}
-
-@media (min-width: 1000px) {
-	.carousel-arrow--prev {
-	    left: 5%;
-	}
-
-	.carousel-arrow--next {
 		right: 5%;
 	}
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1300px) {
 	.portfolio {
-
-		&__inner {
-			width: 80%;
-			margin-top: 5%;
-		}
-
-		&__text {
-			width: 65%;
-		}
+		margin-top: 7%;
 	}
 
-	#carousel {
-	  width: 80%;
+	.portfolio__title {
+		margin-top: 8%;
+    	margin-bottom: 3%;
+	}
+
+	.portfolio__text {
+		width: 55%;
 	}
 
 	.carousel-arrow--prev {
-		position: absolute;
-	    top: 60%;
-	    left: 0;
+	    left: 15%;
 	}
 
 	.carousel-arrow--next {
-		position: absolute;
-	    top: 60%;
-	    right: 0;
+		right: 15%;
 	}
 }
-*/
