@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Тестовое задание: Крайт</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/TweenMax.min.js" defer></script>
-  <script type="text/javascript" src="js/jquery.waterwheelCarousel.js" defer></script>
-  <script type="text/javascript" src="js/carousel.js" defer></script>
-  <script type="text/javascript" src="js/carousel-comment.js" defer></script>
+  <script src="js/TweenMax.min.js" defer></script>
+  <script src="js/jquery.waterwheelCarousel.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="js/carousel-comment.js" defer></script>
+  <script src="js/scrolling.js" defer></script>
+  <script src="js/mouseenter.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -18,9 +20,9 @@
         <img class="logo header__logo" src="img/Logo.png" width="128" height="40" alt="Логотип">
         <nav class="nav-site">
           <a class="nav-site__item" href="#">Номе</a>
-          <a class="nav-site__item" href="#">Features</a>
-          <a class="nav-site__item" href="#">Pricing</a>
-          <a class="nav-site__item nav-site__item--download" href="#">Download Now</a>
+          <a class="nav-site__item" href="#features">Features</a>
+          <a class="nav-site__item" href="#pricing">Pricing</a>
+          <a class="nav-site__item nav-site__item--download" href="#download">Download Now</a>
         </nav>
       </div>
 
@@ -37,7 +39,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="features">
+    <section id="features" class="features">
       <h2 class="visually-hidden">Features</h2>
       <ul class="features__list">
         <li class="features__item">
@@ -86,22 +88,21 @@
         <p class="portfolio__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
 
         <div id="carousel">
-          <div><img class="carousel__img" src="img/Bitmap1.png" id="item-1"/></div>
-          <div><img class="carousel__img" src="img/Bitmap5.png" id="item-2"/></div>
-          <div><img class="carousel__img" src="img/Bitmap7.png" id="item-3"/></div>
-          <div><img class="carousel__img" src="img/Bitmap4.png" id="item-4"/></div>
-          <div><img class="carousel__img" src="img/Bitmap6.png" id="item-7"/></div>
-          <div><img class="carousel__img" src="img/Bitmap3.png" id="item-6"/></div>
-          <div><img class="carousel__img" src="img/Bitmap.png" id="item-5"/></div>
+          <div><img class="carousel__img" src="img/Bitmap1.png" id="item-1" alt="скрин-1"/></div>
+          <div><img class="carousel__img" src="img/Bitmap5.png" id="item-2" alt="скрин-2"/></div>
+          <div><img class="carousel__img" src="img/Bitmap7.png" id="item-3" alt="скрин-3"/></div>
+          <div><img class="carousel__img" src="img/Bitmap4.png" id="item-4" alt="скрин-4"/></div>
+          <div><img class="carousel__img" src="img/Bitmap6.png" id="item-7" alt="скрин-5"/></div>
+          <div><img class="carousel__img" src="img/Bitmap3.png" id="item-6" alt="скрин-6"/></div>
+          <div><img class="carousel__img" src="img/Bitmap.png" id="item-5" alt="скрин-7"/></div>
         </div>
         <a href="#" class="carousel-arrow carousel-arrow--prev" id="prev">Prev</a>
-        <a href="#" class="carousel-arrow carousel-arrow--next" id="next">Next</svg>
-        </a>
+        <a href="#" class="carousel-arrow carousel-arrow--next" id="next">Next</a>
       </div>
     </section>
 
     <section class="price">
-      <h2 class="price__title">We've got the perfect package for you</h2>
+      <h2 id="pricing" class="price__title">We've got the perfect package for you</h2>
       <p class="price__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
       <ul class="price-list">
         <li class="price-list__item">
@@ -156,6 +157,7 @@
     </section>
 
     <section class="video">
+      <h2 class="visually-hidden">video presentation</h2>
       <video class="video__content" preload="metadata">
         <source src="#.mp4" type="video/mp4">
         <source src="#.ogv" type="video/ogg">
@@ -172,7 +174,7 @@
         <ul data-current='0' class='slidewrapper'>
           <li class="slide">
             <p class="slide__text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
-            <img class="slide__userpic" src="img/userpic-1.png">
+            <img class="slide__userpic" src="img/userpic-1.png" alt="аватарка пользователя">
             <div class="slide__inner">
               <span class="slide__name">Alexandra Bullok</span><br>
               <span class="slide__add-info">Apple inc.</span>
@@ -180,7 +182,7 @@
           </li>
           <li class="slide slide-active">
             <p class="slide__text">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
-            <img class="slide__userpic" src="img/userpic-2.png">
+            <img class="slide__userpic" src="img/userpic-2.png" alt="аватарка пользователя">
             <div class="slide__inner">
               <span class="slide__name">Gary Sebastian</span><br>
               <span class="slide__add-info">Apple inc.</span>
@@ -188,7 +190,7 @@
           </li>
           <li class="slide">
             <p class="slide__text">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
-            <img class="slide__userpic" src="img/userpic-3.png">
+            <img class="slide__userpic" src="img/userpic-3.png" alt="аватарка пользователя">
             <div class="slide__inner">
               <span class="slide__name">Samanta Bilbau</span><br>
               <span class="slide__add-info">Apple inc.</span>
@@ -202,7 +204,7 @@
       </div>
     </section>  
 
-    <section class="downloads">
+    <section id="download" class="downloads">
       <div class="downloads__inner">
         <h2 class="downloads__title">Download Giant App Now</h2>
         <ul class="IOS-list">
